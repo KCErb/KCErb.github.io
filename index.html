@@ -1,9 +1,46 @@
 ---
-layout: default
+layout: front-page
 ---
 
-<div class="home">
+<div class="wrapper">
+  <div class="home">
+    <p class="lead">
+      Hey there! Thanks for stopping by to read a little about me, my interests and projects.
+      I mainly made this site to host tutorials and other open-source things I'm doing but
+      I figured why not make the main page be something like a CV or resume? So here's a
+      little about me.
+    </p>
+  </div>
+</div>
 
-  <h1 class="page-heading">Howdy</h1>
+<div class="wrapper container">
+  <div class="row">
+    <div class="col-md-4">
+      {% include feature.html title="My Family" body="All that I hope to accomplish in life is to be an excellent husband and father." %}
+    </div>
+    <div class="col-md-4">
+      {% include feature.html title="The Physics" body="My academic journey has been one of physics. <a href='google.com'> LINK?? </a>"%}
+    </div>
+    <div class="col-md-4">
+      {% include feature.html title="Such Programming" body="First I learned to hate programming, then I learned to depend on it like water." %}
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row center">
+    <div class="col-md-12">
+      Philosophy
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+    This is the unusual part. I once had a friend ask me: who's your favorite philosopher.
+    I was somewhat taken aback. My favorite what? His idea was that since I'm getting a PhD,
+    a Doctrate of Philosophy, I should know something about the field and would presumably
+    have some opinions on the topic such as which philosopher I liked best. Read more . . .
+  </div>
+  </div>
 
 </div>

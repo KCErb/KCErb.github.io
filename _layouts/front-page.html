@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="full-width-banner">
+      <div class="page-content wrapper container">
+        <div class="row vertical-align">
+          <div class="col-md-3">
+            <img src="images/me.png" alt="shuai-ge" class="img-circle" style="width: 140px;">
+          </div>
+          <div class="col-md-9 large-text-block">
+            Dad, Physicist, Developer
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content">
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
