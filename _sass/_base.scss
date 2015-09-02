@@ -93,6 +93,9 @@ a {
     }
 }
 
+.active {
+  text-decoration: underline;
+}
 
 
 /**
@@ -121,6 +124,7 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
+    color: $grey-color-dark;
     background-color: #eef;
 }
 

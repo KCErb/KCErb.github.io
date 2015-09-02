@@ -7,14 +7,14 @@
 
     {% include header.html %}
 
-    <div class="full-width-banner">
-      <div class="page-content wrapper container">
-        <div class="row vertical-align">
-          <div class="col-md-3">
+    <div class="page-content full-width-banner">
+      <div class="container">
+        <div class="row vertical-align ">
+          <div class="col-md-2 col-md-offset-1">
             <img src="images/me.png" alt="shuai-ge" class="img-circle" style="width: 140px;">
           </div>
           <div class="col-md-9 large-text-block">
-            Dad, Physicist, Developer
+            Loves ice-cream, physics, and programming
             <hr>
           </div>
         </div>
@@ -22,8 +22,11 @@
     </div>
 
     <div class="page-content">
+      <div class="wrapper">
         {{ content }}
+      </div>
     </div>
+
 
     {% include footer.html %}
 
