@@ -9,7 +9,3 @@ github_username:  KCErb
 
 # Build settings
 markdown: kramdown
-
-# Timeago settings
-jekyll_timeago:
-  depth: 1 

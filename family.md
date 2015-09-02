@@ -10,7 +10,7 @@ date: 2015-08-24
 <img src="/images/the-fam.png" alt="The Fam" class="img-responsive">
 
 <p class="lead">
-Shelyse and I were married {% timeago 2012-06-30 %} just after I finished my Bachelor's degree and Audrey was born a year and a half later. This little group is my family and the core of my life. I have to make this clear from the get-go because if anyone is going to learn about me from a distance they have to learn that my family comes first.
+Shelyse and I were married 3 years ago just after I finished my Bachelor's degree and Audrey was born a year and a half later. This little group is my family and the core of my life. I have to make this clear from the get-go because if anyone is going to learn about me from a distance they have to learn that my family comes first.
 </p>
 
 
