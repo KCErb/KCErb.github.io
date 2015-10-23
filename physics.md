@@ -27,7 +27,8 @@ date: 2015-08-24
 
 Two of the figures in my presentation were GIFs so I [put them online](http://www.ucair.med.utah.edu/erb/) to accompany the poster.
 
-***
+<hr class='blue'>
+
 <p class="vertical-space">
 Before my time here at the U, I was an undergraduate at BYU and worked with two research groups. I've always held a dual interest in medicine and physics so with the one group I learned X-ray crystallography and with the other I learned about Proteomics.
 </p>
