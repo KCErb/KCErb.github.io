@@ -47,7 +47,7 @@ taken me through all the familiar paths: rails, HTML, CSS, JS, git, relational-d
 
 ### A Highly Portable Folio
 
-Since that turning point, I've spent hundreds of hours on a handful of projects. One could basically see all of my work by just visiting my github profile: [LINK_TO_PROFILE](https://github.com/KCErb). But if you're interested in a guided tour, read on and click the links!
+Since that turning point, I've spent hundreds of hours on a handful of projects. One could basically see all of my work by just visiting my github profile: [github.com/KCErb](https://github.com/KCErb). But if you're interested in a guided tour, read on and click the links!
 
 #### Apps
 
