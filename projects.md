@@ -37,13 +37,12 @@ Wow. The whole textbook is full of variables like `a` and functions like `pfft`.
 
 Or so I thought.
 
-### A Transition
+### A Project
 
-In the following years I often needed to write little bits of software for my research. I had a soft-spot for Mathematica
-so I did **everything** in that language. As I grew to realize the utility of writing software, I found myself writing more and more Mathematica code to do things that Mathematica was never intended to do. One day I was showing my code to a cousin who laughed at my bank of CSV files calling it a "poor man's database". "Data-what?" I thought. *There was a thing for doing this?*
+In the following years I often needed to write little bits of software for my research. I had a soft-spot for Mathematica so I did **everything** in that language. As I grew to realize the utility of writing software, I found myself writing more and more Mathematica code to do things that Mathematica was never intended to do. One day I was showing my code to a cousin who laughed at my bank of CSV files calling it a "poor man's database". "Data-what?" I thought. *There was a thing for doing this?*
 
-Shortly after that leaning tower of copypasta came tumbling down a good friend introduced me to ["the poignant guide"](https://en.wikipedia.org/wiki/Why%27s_(poignant)_Guide_to_Ruby). From there, I learned about Shoes and found a strange transformation taking place inside my brain. My then girlfriend (now wife) would take a bathroom break on a date and out would come my laptop to finish typing that last method I'd been crafting. At the time I wasn't sure how to cope with my new identity but now I'm a happy Ruby addict and my journey has
-taken me through all the familiar paths: rails, HTML, CSS, JS, git, relational-databases etc. In the meantime the physics world put me in contact with C, OpenCL, C++, Python, and yes even a little FORTRAN.
+Shortly after that leaning tower of copypasta came tumbling down, a good friend introduced me to ["the poignant guide"](https://en.wikipedia.org/wiki/Why%27s_(poignant)_Guide_to_Ruby). From there, I learned about Shoes and found a strange transformation taking place inside my brain. My then girlfriend (now wife) would take a bathroom break on a date and out would come my laptop to finish typing that last method I'd been crafting. At the time I wasn't sure how to cope with my new identity but now I'm a happy Ruby addict and my journey has
+taken me through all the familiar paths: rails, HTML, CSS, JS, git, relational-databases etc. In the meantime the physics world put me in contact with C, OpenCL, C++, Python, and yes even a little FORTRAN. Most recently I've been digging into the murky depths of PHP as I've been building some Drupal modules at work.
 
 ### A Highly Portable Folio
 
@@ -87,3 +86,8 @@ Outside of learning app development, I've been writing more and more MATLAB code
 dreams of someday building `bread` into a proper Ruby-based infrastructure for modern software science. It'll support everything from data-acquisition to final presentation tools. Heck Crystal might even play a role! But for now, I'll have to settle for using what's available to do my classwork and keep dreaming.
 
 Lastly, there's one other project to mention: the [card drafter](https://github.com/odds-and-ends/card_drafter). This little tool has been in development as I've worked on a game with some of my friends. We needed a little something to quickly iterate cards during the drafting process so I threw that together and with the right motivation might try to make it more general purpose than it currently is.
+
+
+#### A Job
+
+Recently, I've picked up a part-time job doing web development for a company in Salt Lake: lolo llc. They have a few contracts out for other e-commerce businesses and have a suite of their own apps in exercise / fitness. I've mostly sub-contracted with them but recently was pulled on staff for a new contract of theirs that is very hush-hush for now. I'm having a great time solving problems, learning new skills, and writing code that I'm proud of.

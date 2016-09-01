@@ -10,14 +10,14 @@ date: 2015-08-24
 <img src="/images/the-fam.png" alt="The Fam" class="img-responsive">
 
 <p class="lead">
-Shelyse and I were married 3 years ago just after I finished my Bachelor's degree and Audrey was born a year and a half later. This little group is my family and the core of my life. I have to make this clear from the get-go because if anyone is going to learn about me from a distance they have to learn that my family comes first.
+Shelyse and I were married 4 years ago just after I finished my Bachelor's degree. We have two children Audrey (2 and a half) and Preston (4 months). This little group is my family and the core of my life. I have to make this clear from the get-go because if anyone is going to learn about me from a distance they have to learn that my family comes first.
 </p>
 
 
 
 ### A Little About Us
 
-We live in Bountiful, UT which means I ride the bus up to Salt Lake each day for my studies and come home each evening to have dinner and family time with them. When I'm done with school we hope someday to get a few acres of land and put a little home on it. We want our kids to grow up in a place that encourages them to get outside and play and explore.
+We live in Bountiful, UT where I work mostly from home doing part time research and part time software development. When I'm done with school we hope someday to get a few acres of land and put a little home on it. We want our kids to grow up in a place that encourages them to get outside and play and explore.
 
 Shelyse is a traditional stay-at-home Mom and I couldn't be happier with her choice. I'm very grateful for a loving and supportive wife who is willing to make that sacrifice for me and for our children.
 

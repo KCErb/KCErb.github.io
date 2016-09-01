@@ -44,10 +44,6 @@ Before my time here at the U, I was an undergraduate at BYU and worked with two 
 
 <br>
 
-### Future Plans
+### Transition
 
-Right now I do physics full-time and I code for fun, but I hope in the future to reverse that and obtain a full-time job programming so that I can conduct my own research without worrying about the "fundability" of my work. My plan for attaining that end is to attach myself to a university as an auxiliary professor.
-
-In that arrangement, I am attached to a research group at the university and agree to do a few hours of research a week with them. The university has no financial obligation towards me, so instead, they offer me access to their library system / journal subscriptions. In the meantime, I put my love of programming to work bringing home the bacon.
-
-The end result is that I mostly spend my days programming and thinking up new ideas in physics. When I publish, the university gets to have their name on my papers and my employer gets to say he has a publishing PhD-toting physicist on the team. That's a win-win-win.
+Right now I'm transitioning from my MRI research to more theoretical endeavors. During this period, I'm doing research on my own time and paying the bills with programming. The result is that I can conduct my own research without worrying about the "fundability" of my work. I'm very excited about the direction this is all headed, but things are still in transition.
