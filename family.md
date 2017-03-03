@@ -6,11 +6,10 @@ order: 1
 date: 2015-08-24
 ---
 
-
-<img src="/images/the-fam.png" alt="The Fam" class="img-responsive">
+<img src="/images/the-fam.jpg" alt="The Fam" class="img-responsive" style="width=;" />
 
 <p class="lead">
-Shelyse and I were married 4 years ago just after I finished my Bachelor's degree. We have two children Audrey (2 and a half) and Preston (4 months). This little group is my family and the core of my life. I have to make this clear from the get-go because if anyone is going to learn about me from a distance they have to learn that my family comes first.
+Shelyse and I were married 4 and a half years ago just after I finished my Bachelor's degree. We have two children Audrey (3) and Preston (10 months). This little group is my family and the core of my life. I have to make this clear from the get-go because if anyone is going to learn about me from a distance they have to learn that my family comes first.
 </p>
 
 

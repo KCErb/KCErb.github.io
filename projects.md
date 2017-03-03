@@ -71,7 +71,7 @@ building it the right way: BDD FTW!
 
 #### Tutorials
 
-In the last few months, I've been focusing my efforts on tutorial writing. I've learned from my time
+For a while I focused my efforts on tutorial writing. I've learned from my time
 teaching physics that one of the best ways to master a topic is to teach it.
 
 <img src="/images/so-wrong.gif" alt="right? wrong." class="img-responsive">
@@ -82,12 +82,12 @@ Before I started working with RubyMotion, I used [Ruboto](http://ruboto.org/) to
 
 #### Other Projects
 
-Outside of learning app development, I've been writing more and more MATLAB code (against my will) in the last year since I've started working in image processing. Though a lot of that code is still private (it isn't published in a journal, so I can't share it yet) the parts I'm allowed to make public, I plan to put in the [bread project](https://github.com/bread) which right now just hosts the Ruby tool I used to make my scientific-poster. I have grand
+Outside of learning app development, I wrote a considerable amount of MATLAB code (against my will) as I worked in image processing. Though a lot of that code is still private (it isn't published in a journal, so I can't share it yet) the parts I'm allowed to make public, I plan to put in the [bread project](https://github.com/bread) which right now just hosts the Ruby tool I used to make my scientific-poster. I have grand
 dreams of someday building `bread` into a proper Ruby-based infrastructure for modern software science. It'll support everything from data-acquisition to final presentation tools. Heck Crystal might even play a role! But for now, I'll have to settle for using what's available to do my classwork and keep dreaming.
 
-Lastly, there's one other project to mention: the [card drafter](https://github.com/odds-and-ends/card_drafter). This little tool has been in development as I've worked on a game with some of my friends. We needed a little something to quickly iterate cards during the drafting process so I threw that together and with the right motivation might try to make it more general purpose than it currently is.
+Lastly, there's one other project to mention: the [card drafter](https://github.com/odds-and-ends/card_drafter). This little tool was in development when I worked on a game with some of my friends. We needed a little something to quickly iterate cards during the drafting process so I threw that together and with the right motivation might try to make it more general purpose than it currently is.
 
 
 #### A Job
 
-Recently, I've picked up a part-time job doing web development for a company in Salt Lake: lolo llc. They have a few contracts out for other e-commerce businesses and have a suite of their own apps in exercise / fitness. I've mostly sub-contracted with them but recently was pulled on staff for a new contract of theirs that is very hush-hush for now. I'm having a great time solving problems, learning new skills, and writing code that I'm proud of.
+Financial support during my transition from medical to theoretical physics has been graciously provided by an awesome company in Salt Lake: Lolo llc. We just launched a new website and apps for Jillian Michaels. I'm having a great time solving problems, learning new skills, and writing code that I'm proud of with a team that I enjoy working with.
