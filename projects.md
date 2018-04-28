@@ -46,7 +46,7 @@ taken me through all the familiar paths: rails, HTML, CSS, JS, git, relational-d
 
 ### A Highly Portable Folio
 
-Since that turning point, I've spent hundreds of hours on a handful of projects. One could basically see all of my work by just visiting my github profile: [github.com/KCErb](https://github.com/KCErb). But if you're interested in a guided tour, read on and click the links!
+Since that turning point, I've spent hundreds of hours on a handful of projects. One could basically see all of my work by just visiting my github profile: [github.com/KCErb](https://github.com/KCErb). If you're interested in a guided tour, read on and click the links! But be warned, my time in grad school and my software contracting work have taken me away from open-source for a while so you might find these a little cobwebby.
 
 #### Apps
 
@@ -88,6 +88,8 @@ dreams of someday building `bread` into a proper Ruby-based infrastructure for m
 Lastly, there's one other project to mention: the [card drafter](https://github.com/odds-and-ends/card_drafter). This little tool was in development when I worked on a game with some of my friends. We needed a little something to quickly iterate cards during the drafting process so I threw that together and with the right motivation might try to make it more general purpose than it currently is.
 
 
-#### A Job
+#### The Present
 
-Financial support during my transition from medical to theoretical physics has been graciously provided by an awesome company in Salt Lake: Lolo llc. We just launched a new website and apps for Jillian Michaels. I'm having a great time solving problems, learning new skills, and writing code that I'm proud of with a team that I enjoy working with.
+Financial support during my transition from medical to theoretical physics has been graciously provided by an awesome company in Salt Lake: Lolo llc. We just launched a new website and apps for Jillian Michaels. My role in that project has been on the backend writing the integrated payment system which talks to the Apple Store, Play Store, and our own payment processing to give a unified representation of a user's subscription. With Lolo I'm having a great time solving problems, learning new skills, and writing code that I'm proud of with a team that I enjoy working with.
+
+A few months ago, another company, Kings Distributed Systems, contacted me about translating some old math and physics libraries into Javascript for their new Distributed Compute project. That experience has put me deep into the inner workings of numerical libraries, Fortran, and the like. It's been very rewarding to see a 30+ year-old Fortran library hum along just fine in Javascript and thus take the next step towards a whole paradigm in scientific computing which I'll have to write about some other time. If you want to learn more just check out: [sparc.network](https://sparc.network/).

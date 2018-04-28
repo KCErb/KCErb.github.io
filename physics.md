@@ -11,21 +11,21 @@ date: 2015-08-24
 
 
 <p class="lead">
-  I'm a graduate student at the University of Utah studying physics and
+  I'm a graduate student at Charles University studying physics and
   generally having a pretty good time.
 </p>
 
-Right now I'm transitioning from my Master's degree focus (MRI research) to more theoretical endeavors. During this period, I'm doing research on my own time, paying the bills with programming, and actively seeking to form a new Ph.D. committee centered on developing a framework that I call physical algebra. It's still a work in progress and I've got a long way to go but I'll be presenting what I've got so far at the [2017 APS March Meeting](http://meetings.aps.org/Meeting/MAR17/Session/T1.266). Though my current committee chair, Brian Saam, is supportive of the work, he has recommended that I form a new committee and that I not limit my search to the University of Utah. My hope is that at this conference I can get a professor somewhere as excited as I am about the prospects of Physical Algebra and turn this project into Ph.D. thesis.
+Right now I'm transitioning from my Master's degree focus (MRI research) to more theoretical endeavors. I'm splitting my time about 50/50 between my advisor's work in group-theoretical approaches to understanding ferroic phase transitions ([Phys. Rev. Let.](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.116.177602)), and my own ideas in something that I call physical algebra ([2017 March Meeting](http://meetings.aps.org/Meeting/MAR17/Session/T1.266)).
 
 <hr class='blue'>
 
 <p class="vertical-space">
-Before switching to theoretical physics, I was doing research in the field of magnetic resonance imaging and before that I was an undergraduate at BYU and worked with two research groups. I've always held a dual interest in medicine and physics so with the one group I learned X-ray crystallography and with the other I learned about Proteomics.
+Before switching to theoretical physics, I was doing research in the field of magnetic resonance imaging and before that I was an undergraduate at BYU and worked with two research groups. I've always held a dual interest in medicine and physics so with the one group I learned X-ray crystallography and with the other I learned about Proteomics. Below you'll see a short summary of the three papers I've helped author.
 </p>
 
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
-    {% include citation.html title="Comparison of Pre-Reconstruction Interpolation Methods for Rapid Compressed Sensing Reconstruction of Non-Cartesian k-Space" image="ismrm15.png" authors="KC Erb, Ganesh Adluru, Srikant Kamesh Iyer, Devavrat Likhite, John A. Roberts, Edward DiBella" source="Proceedings of the 23rd Annual Meeting of ISMRM, Toronto, Canada. 2015." link="http://www.ismrm.org/15/" %}
+    {% include citation.html title="Evaluation of pre-reconstruction interpolation methods for iterative reconstruction of radial k-space data" image="ismrm15.png" authors="Tian Y, Erb KC, Adluru G, Likhite D, Pedgaonkar A, Blatt M, Kamesh Iyer S, Roberts J, DiBella E" source="Med. Phys., 44: 4025-4034. doi:10.1002/mp.12357" link="https://www.ncbi.nlm.nih.gov/pubmed/28543266" %}
   </div>
 </div>
 <div class="row">
