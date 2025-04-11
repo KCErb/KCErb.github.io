@@ -3,23 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KC Erb's Modern Website</title>
+    <meta name="description" content="This is KC Erb's modern funny annoying online resume">
+    <meta name="keywords" content="KC Erb, resume, annoying, funny, modern website">
+    <meta name="author" content="KC Erb">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KC Erb</title>
     <style>
         body {
-            font-family: 'Helvetica', sans-serif;
-            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f7f9;
             margin: 0;
             padding: 0;
+            color: #333;
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 700px;
+            margin: 2rem auto;
+            padding: 2rem;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 { color: #333; }
-        section { margin-bottom: 40px; }
+        h1 {
+            margin-bottom: 1.2rem;
+            font-weight: 600;
+            color: #2c2c2c;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 0.8rem;
+            color: #444;
+            font-weight: 500;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.3rem;
+        }
+        section {
+            margin-bottom: 2.5rem;
+        }
+        img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        p, li {
+            line-height: 1.6;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 1.8rem;
+            padding-left: 0;
+        }
+        .two-column-lists {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem 2rem;
+        }
+        .two-column-lists ul {
+            margin-left: 0;
+        }
+        .two-column-lists li {
+            list-style-position: inside;
+        }
+        a {
+            color: #007ACC;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         .modal {
             display: none;
             position: fixed;
@@ -138,27 +193,73 @@
 </head>
 <body>
     <div class="container">
-        <h1>KC Erb's Modern Website</h1>
+        <h1>KC Erb, Ph.D</h1>
+        
         <section id="about">
             <h2>About Me</h2>
-            <img src="/just-a-photo.png" alt="KC Erb" style="border-radius: 50%; width: 150px; height: 150px;">
-            <p>Technical strategist with a physicist's brain and a product manager's soul. I started in magnetic resonance physics and ended up building quantum computers. Along the way, I discovered my favorite work involves organizing engineers, researchers, and stakeholders around crazy-but-clear goals. I believe in listening, clarity, and leading with epistemic humility.</p>
+            <div style="display: flex">
+            <img src="/just-a-photo.png" alt="KC Erb">
+            <p style="max-width: 500px;">
+                I’m a technical strategist with a physicist’s brain and a product manager’s soul. 
+                My favorite work involves motivating teams around bold but achievable goals. 
+                I believe in clarity, empathy, and leading with humility.
+            </p>
+        </div>
         </section>
+
         <section id="experience">
             <h2>Experience</h2>
-            <p><strong>Staff Software Engineer - IonQ</strong><br>Software Lead - Engineering Product Delivery</p>
             <ul>
-                <li></li>
+                <li>Staff software engineer at IonQ cross-functional product initiatives</li>
+                <li>Created modern developer tooling that streamlined deployment times</li>
+                <li>Coordinated multi-team projects spanning research, software, and operations</li>
+                <li>Managed roadmaps and timelines for high-impact deliverables</li>
             </ul>
         </section>
+
         <section id="skills">
             <h2>Skills</h2>
+            <div class="two-column-lists">
+                <ul>
+                    <li>Distilling complexity</li>
+                    <li>Legacy code salvation</li>
+                    <li>Public speaking</li>
+                    <li>Team leadership</li>
+                    <li>Effective communication</li>
+                </ul>
+                <ul>
+                    <li>Go, Rust, Python, C++</li>
+                    <li>Docker, Kubernetes</li>
+                    <li>Frontend frameworks (React, etc.)</li>
+                    <li>Continuous integration &amp; deployment</li>
+                    <li>Cloud services (AWS/GCP)</li>
+                </ul>
+            </div>
         </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Astronomy &amp; stargazing</li>
+                <li>Soldering and hardware tinkering</li>
+                <li>Learning new languages</li>
+                <li>Exploring local hiking trails</li>
+            </ul>
+        </section>
+
         <section id="contact">
             <h2>Contact</h2>
-            <p>KC Erb, Ph.D<br>Snohomish, WA<br>801.554.8253<br><a href="mailto:kc@kcerb.com">kc@kcerb.com</a></p>
+            <p>
+                KC Erb, Ph.D<br>
+                Snohomish, WA<br>
+                801.554.8253<br>
+                <a href="mailto:kc@kcerb.com">kc@kcerb.com</a>
+            </p>
         </section>
-        <p style="text-align: center;"><a href="index.html">Go back to the classic site</a></p>
+
+        <p style="text-align: center;">
+            <a href="index.html">Go back to the classic site</a>
+        </p>
     </div>
 
     <!-- Email Subscription Modal -->
@@ -211,15 +312,17 @@
     <div class="chat-bubble">Chat</div>
 
     <div id="cookieNotification">
-            This website uses cookies to annoy you even more. Accept cookies to make this popup go away forever... or until we decide to show it again.
-            <button id="acceptCookies" style="margin-left: 10px; padding: 5px 10px; background: #ff9800; color: #fff; border: none; cursor: pointer;">Accept Cookies</button>
+        <p>
+            This website uses cookies. Accept cookies to make this popup go away forever... 
+            or until we decide to show it again.
+            <button id="acceptCookies">Accept Cookies</button>
         </p>
     </div>
 
     <div id="cookieModal">
         <div class="modal-content">
             <h2>Confirm Your Cookie Preferences</h2>
-            <p>We track the following for your "convenience." Please confirm:</p>
+            <p>We track ALL of the following for your convenience. Please select some if that makes you feel better.</p>
             <div class="checkbox-group">
                 <label><input type="checkbox"> Pancakes flipped</label>
                 <label><input type="checkbox"> Your weight</label>
