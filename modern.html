@@ -8,6 +8,7 @@
     <meta name="author" content="KC Erb">
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>KC Erb</title>
     <style>
         body {
@@ -82,6 +83,8 @@
             left: 0;
             width: 100%;
             height: 100%;
+            z-index: 1500;
+            background: rgba(0,0,0,.5);
         }
         .modal-content {
             background-color: #fff;
@@ -98,21 +101,6 @@
             top: 10px;
             right: 10px;
             font-size: 20px;
-            cursor: pointer;
-        }
-        .chat-bubble {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            background-color: #ff4444;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            animation: bounce 1s infinite;
             cursor: pointer;
         }
         @keyframes bounce {
@@ -169,7 +157,6 @@
             padding: 15px;
             text-align: center;
             z-index: 1000;
-            height: 100px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -198,7 +185,7 @@
         <section id="about">
             <h2>About Me</h2>
             <div style="display: flex">
-            <img src="/just-a-photo.png" alt="KC Erb">
+            <img src="/img/just-a-photo.png" alt="KC Erb">
             <p style="max-width: 500px;">
                 I’m a technical strategist with a physicist’s brain and a product manager’s soul. 
                 My favorite work involves motivating teams around bold but achievable goals. 
@@ -210,7 +197,7 @@
         <section id="experience">
             <h2>Experience</h2>
             <ul>
-                <li>Staff software engineer at IonQ cross-functional product initiatives</li>
+                <li>Currently a staff software engineer at IonQ responsible for product delivery</li>
                 <li>Created modern developer tooling that streamlined deployment times</li>
                 <li>Coordinated multi-team projects spanning research, software, and operations</li>
                 <li>Managed roadmaps and timelines for high-impact deliverables</li>
@@ -237,12 +224,19 @@
 
         <section id="hobbies">
             <h2>Hobbies</h2>
-            <ul>
-                <li>Astronomy &amp; stargazing</li>
-                <li>Soldering and hardware tinkering</li>
-                <li>Learning new languages</li>
-                <li>Piano, trombone, singing, music</li>
-            </ul>
+            <div class="two-column-lists">
+                <ul>
+                    <li>Playing with my kids</li>
+                    <li>Astronomy &amp; stargazing</li>
+                    <li>Learning new languages</li>
+                    <li>Piano, trombone, singing, music</li>
+                </ul>
+                <ul>
+                    <li>Soldering and hardware tinkering</li>
+                    <li>Reading (mostly classics right now)</li>
+                    <li>Woodworking</li>
+                </ul>
+            </div>
         </section>
 
         <section id="contact">
@@ -259,55 +253,6 @@
             <a href="index.html">Go back to the classic site</a>
         </p>
     </div>
-
-    <!-- Email Subscription Modal -->
-    <div id="emailModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Subscribe Now!</h2>
-            <p>Enter your email for updates!</p>
-            <form>
-                <input type="email" placeholder="Your email">
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Location Access Modal -->
-    <div id="locationModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Allow Location Access</h2>
-            <p>We need your location to serve you better!</p>
-            <button onclick="requestLocation()">Allow</button>
-        </div>
-    </div>
-
-    <!-- Notifications Modal -->
-    <div id="notificationModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Enable Notifications</h2>
-            <p>Stay updated with our latest news!</p>
-            <button onclick="requestNotifications()">Enable</button>
-        </div>
-    </div>
-
-    <!-- Chat Modal -->
-    <div id="chatModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Start Chat</h2>
-            <p>Enter your email to start chatting with us!</p>
-            <form>
-                <input type="email" placeholder="Your email">
-                <button type="submit">Start Chat</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Chat Bubble -->
-    <div class="chat-bubble">Chat</div>
 
     <div id="cookieNotification">
         <p>
@@ -337,82 +282,14 @@
         </div>
     </div>
 
+    <script src="js/modals.js"></script>
+    <script src="js/chatBubble.js"></script>
     <script>
-        const emailTitles = [
-            "Sign up for our newsletter!",
-            "Emails!",
-            "Join Our Mailing List!",
-            "Stay Updated!",
-            "Be the First to Know!"
-        ];
-
-        const locationTitles = [
-            "Allow Location Access",
-            "We Need Your Location",
-            "Location Needed!",
-            "Your Location, Please!"
-        ];
-
-        const notificationTitles = [
-            "Enable Notifications",
-            "Turn On Notifications",
-            "Get Notified Instantly!"
-        ];
-
-        // Random helper function
+        // Added helper function to fix modal behavior.
         function randomChance(probability) {
             return Math.random() < probability;
         }
-
-        // Randomize modal content position
-        function randomizeModalContentPosition(modalId) {
-            const modalContent = document.querySelector(`#${modalId} .modal-content`);
-            const top = Math.random() * 50 + 10; // Random top position between 10% and 60%
-            const left = Math.random() * 50 + 10; // Random left position between 10% and 60%
-            modalContent.style.position = 'absolute';
-            modalContent.style.top = `${top}%`;
-            modalContent.style.left = `${left}%`;
-            modalContent.style.transform = 'translate(-50%, -50%)'; // Center the modal content at the randomized position
-        }
-
-        // Randomize modal title
-        function randomizeModalTitle(modalId, titles) {
-            const modalTitle = document.querySelector(`#${modalId} h2`);
-            modalTitle.textContent = titles[Math.floor(Math.random() * titles.length)];
-        }
-
-        // Show modals with randomized content positions and titles
-        function showModal(modalId, titles) {
-            randomizeModalContentPosition(modalId);
-            randomizeModalTitle(modalId, titles);
-            document.getElementById(modalId).style.display = 'block';
-        }
-
-        // Close modals
-        function closeModal(modalId) {
-            document.getElementById(modalId).style.display = 'none';
-        }
-
-        let locationModalShown = false; // Track if location modal has been shown on scroll
-
-        // Email modal on page load
-        window.onload = function() {
-            showModal('emailModal', emailTitles);
-        };
-
-        window.onscroll = function() {
-            const locationModal = document.getElementById('locationModal');
-            if (!locationModalShown && randomChance(0.4)) { // Show on scroll with 40% chance
-                showModal('locationModal', locationTitles);
-                locationModalShown = true; // Mark as shown
-            }
-        };
-
-        // Show notification modal after 5 seconds
-        setTimeout(function() {
-            showModal('notificationModal', notificationTitles);
-        }, 5000);
-
+        
         document.addEventListener('DOMContentLoaded', function() {
             const cookieNotification = document.getElementById('cookieNotification');
             const acceptCookiesButton = document.getElementById('acceptCookies');
@@ -445,100 +322,6 @@
                 cookieModal.style.display = 'none'; // Hide the cookie modal
             };
         });
-
-        let subscriptionRequestCount = 0;
-        let locationRequestCount = 0;
-        let notificationRequestCount = 0;
-
-        const subscriptionMessages = [
-            "Enter your email for updates!",
-            "Are you sure you don't want emails?",
-            "Last chance! Don't miss out! GIVE US YOUR EMAIL NOW!!"
-        ];
-
-        const locationMessages = [
-            "We would like your location to serve you better.",
-            "Location please? I can't do my job if I don't know where you are.",
-            "Hey this is serious! I need to know where you are to help you! I won't ask again."
-        ];
-
-        const notificationMessages = [
-            "We would like to send you notifications to keep you updated.",
-            "Are you sure? Notifications would help you stay informed about the latest updates.",
-            "I know I know, you already said no twice, but this time it's different! We have cookies!"
-        ];
-
-        function updateModalMessage(modalId, messages, count) {
-            const modal = document.getElementById(modalId);
-            modal.querySelector('p').textContent = messages[count];
-        }
-
-        // Request location
-        function requestLocation() {
-            const locationModal = document.getElementById('locationModal');
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    console.log('Location:', position);
-                    locationModal.style.display = 'none';
-                }, function(error) {
-                    console.error('Geolocation error:', error);
-                    locationModal.style.display = 'none';
-                });
-            } else {
-                alert('Geolocation is not supported by this browser.');
-            }
-        }
-
-        // Request notifications
-        function requestNotifications() {
-            const notificationModal = document.getElementById('notificationModal');
-            if ('Notification' in window) {
-                Notification.requestPermission().then(function(permission) {
-                    if (permission === 'granted') {
-                        new Notification('Thank you for enabling notifications!');
-                    }
-                    notificationModal.style.display = 'none';
-                });
-            } else {
-                alert('Notifications are not supported by this browser.');
-            }
-        }
-
-        // Close location modal and reappear randomly on a timer
-        document.querySelector('#locationModal .close').onclick = function() {
-            closeModal('locationModal');
-            locationRequestCount++
-            if (locationRequestCount < 3) {
-                setTimeout(function() {
-                    showModal('locationModal', locationTitles);
-                    updateModalMessage('locationModal', locationMessages, locationRequestCount);
-                }, Math.random() * 15000 + 5000); // Random delay between 5-20 seconds
-            }
-        };
-
-        // Close notification modal and reappear randomly
-        document.querySelector('#notificationModal .close').onclick = function() {
-            closeModal('notificationModal');
-            notificationRequestCount++
-            if (notificationRequestCount < 3) {
-                setTimeout(function() {
-                    showModal('notificationModal', notificationTitles);
-                    updateModalMessage('notificationModal', notificationMessages, notificationRequestCount);
-                }, Math.random() * 15000 + 5000); // Random delay between 5-20 seconds
-            }
-        };
-
-        // Close email modal and reappear randomly
-        document.querySelector('#emailModal .close').onclick = function() {
-            closeModal('emailModal');
-            subscriptionRequestCount++
-            if (subscriptionRequestCount < 3) {
-                setTimeout(function() {
-                    showModal('emailModal', emailTitles);
-                    updateModalMessage('emailModal', subscriptionMessages, subscriptionRequestCount);
-                }, Math.random() * 15000 + 5000); // Random delay between 5-20 seconds
-            }
-        };
     </script>
 </body>
 </html>
