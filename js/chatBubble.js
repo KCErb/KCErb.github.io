@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create and style helper div connecting to chat bubble
         helperDiv = document.createElement('div');
         helperDiv.classList.add('chat-helper');
-        // Replace 'path/to/person.jpg' with the actual person image source when provided
+        // Helper image found at img/helper.jpg
         helperDiv.innerHTML = '<img src="img/helper.jpg" alt="Helper" class="helper-pic"><span>Got any questions? I\'m happy to help.</span>';
         document.body.appendChild(helperDiv);
     }, 5000);
